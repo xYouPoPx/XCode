@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tap_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time : 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3y-Y3-RcJ">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.0039215686274509803" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" restorationIdentifier="scoreLabel" text="Score : " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVs-c5-lmq">
+                                <rect key="frame" x="34" y="494" width="138" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="4o1-yy-5Gz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.0039215686274509803" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4o1-yy-5Gz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                    <mask key="constraints">
+                                        <include reference="4o1-yy-5Gz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="499" width="138" height="62"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ja-fN-uGY">
+                                <rect key="frame" x="20" y="242" width="166" height="116"/>
+                                <color key="backgroundColor" red="1" green="0.0039215686269999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="A9p-91-glb"/>
+                                    <constraint firstAttribute="height" constant="113" id="WNC-l0-TZP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" red="0.97633119852426542" green="0.74548734649888426" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A9p-91-glb"/>
+                                        <exclude reference="WNC-l0-TZP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="A9p-91-glb"/>
+                                        <include reference="WNC-l0-TZP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" preservesSuperviewLayoutMargins="NO"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="117" y="342" width="166" height="116"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KhM-q4-u1D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D3y-Y3-RcJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="0LI-ac-Bam"/>
+                            <constraint firstItem="PVs-c5-lmq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gj2-yG-HIU"/>
+                            <constraint firstItem="0Ja-fN-uGY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gju-Ml-aEB"/>
+                            <constraint firstItem="D3y-Y3-RcJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dzE-iJ-3ci"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PVs-c5-lmq" secondAttribute="bottom" constant="8" id="k8W-ie-Guq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PVs-c5-lmq" secondAttribute="bottom" constant="8" id="nsV-jw-HOx"/>
+                            <constraint firstItem="0Ja-fN-uGY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tZ4-BK-849"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="D3y-Y3-RcJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0LI-ac-Bam"/>
+                                <exclude reference="dzE-iJ-3ci"/>
+                                <exclude reference="Gju-Ml-aEB"/>
+                                <exclude reference="tZ4-BK-849"/>
+                                <exclude reference="Gj2-yG-HIU"/>
+                                <exclude reference="k8W-ie-Guq"/>
+                                <exclude reference="nsV-jw-HOx"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="D3y-Y3-RcJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0LI-ac-Bam"/>
+                                <include reference="dzE-iJ-3ci"/>
+                                <include reference="Gju-Ml-aEB"/>
+                                <include reference="tZ4-BK-849"/>
+                                <include reference="Gj2-yG-HIU"/>
+                                <include reference="k8W-ie-Guq"/>
+                                <include reference="nsV-jw-HOx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="PVs-c5-lmq" id="aig-Zh-fZo"/>
+                        <outlet property="timerLabel" destination="D3y-Y3-RcJ" id="CEL-kz-JPa"/>
+                        <outlet property="view" destination="PVs-c5-lmq" id="h3c-TU-GbT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="371"/>
+        </scene>
+    </scenes>
+</document>
